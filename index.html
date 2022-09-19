@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Super App</title>
+</head>
+
+<body>
+    <script>
+        const container = document.createElement("div");
+        container.textContent =
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit perspiciatis ipsa consequuntur explicabo libero!Per as pera ad astra!!!!!!!!!";
+        container.style.boxSizing = "borderBox";
+        container.style.border = "2px solid red";
+        container.style.borderRadius = "10px";
+        container.style.fontSize = "1 em";
+        container.style.width = "30%";
+        container.style.margin = "auto";
+        document.body.prepend(container);
+        const adress = document.createElement("div");
+        const url_1 = document.createElement("a");
+        const url_2 = document.createElement("a");
+        const url_3 = document.createElement("a");
+        adress.style.display = 'flex'
+        adress.style.justifyContent = 'space-between'
+        adress.style.textAlign = "auto";
+        adress.style.fontSize = "1 em";
+        adress.style.width = "30%";
+        adress.style.textAlign = "center";
+        adress.style.margin = "auto";
+        url_1.href = "http://google.ru"
+        url_2.href = "http://google.ru"
+        url_3.href = "http://google.ru"
+        url_1.textContent = "intocode";
+        url_2.textContent = "google";
+        url_3.textContent = "instagram";
+        adress.append(url_1, url_2, url_3);
+        document.body.append(adress);
+    </script>
+</body>
+
+</html>
